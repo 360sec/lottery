@@ -909,29 +909,32 @@ legend:after{
   display: inline-block;
   height: 100%;
   line-height: 100%;
+  text-shadow: -1px -1px 0 #fff,1px 1px 0 #333,1px 1px 0 #444;
 }
 
 .record-container{
    position: absolute;
   width: 90%;
   left: 5%;
-  bottom: 30px;
+  bottom: 100px;
 }
 .record-container .rcd-counter{
     height: 206px;
    width: 100%;   
 }
 .record-container .rcd-counter .ul{
-    padding: 20px;
+    padding: 30px;
 }
 .record-container .rcd-counter .ul span{
   width: 20%;
   display: inline-block;
   /* margin: 8px 10px; */
+  margin: 10px 0;
   color: #fff;
   font-size: 52px;
   font-weight: bold;
   text-align: center;
+  text-shadow: -1px -1px 0 #fff,1px 1px 0 #333,1px 1px 0 #444;
 }
 .flicker{
     width: 300px;
