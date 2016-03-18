@@ -1,0 +1,72 @@
+<div class="game-container">
+    <div class="scroll-list-wrap">
+        <div class="scroll-viewport">
+            {{#each user_lists}}
+                <ul class="scroll-list">
+                    {{#each user_list}}
+                        <li class="scroll-item">
+                            <img class="card-avatar" src="./img/default.png" data-src={{photoUrl}}  alt=""/>
+                            <p class="card-name">{{name}}</p>
+                            <p class="card-mobile">{{mobile}}</p>
+                            <div class="card-border"></div>
+                            <p class="card-hope">{{hope}}</p>
+                        </li>
+                    {{/each}}
+                    {{#each user_list}}
+                        <li class="scroll-item">
+                            <img class="card-avatar" src="./img/default.png" data-src={{photoUrl}}  alt=""/>
+                            <p class="card-name">{{name}}</p>
+                            <p class="card-mobile">{{mobile}}</p>
+                            <div class="card-border"></div>
+                            <p class="card-hope">{{hope}}</p>
+                        </li>
+                    {{/each}}
+                </ul>
+            {{/each}}
+        </div>
+    </div><!-- 后面的列表 -->
+    <div class="card-wrap dispear">
+        <ul class="card-list">
+            {{#times 10}}
+                <li class="card-item">
+                    <div class="card">
+                        <div class="card-front"></div>
+                        <div class="card-back">
+                            <img class="card-avatar" src="./img/default.png" />
+                            <p class="card-name"></p>
+                            <p class="card-mobile"></p>
+                            <div class="card-border"></div>
+                            <p class="card-hope"></p>
+                        </div>
+                    </div>
+                </li>
+            {{/times}}
+        </ul><!-- 中奖10人卡片  -->
+        <ul class="card-list1">
+            <li class="card-item" id="card-single">
+                <div class="card">
+                    <div class="card-front-single"></div>
+                    <div class="card-back-single">
+                        <img class="card-avatar-single" src="./img/default.png"  />
+                        <p class="card-name-single"></p>
+                        <p class="card-mobile-single"></p>
+                        <div class="card-border-single"></div>
+                        <p class="card-hope-single"></p>
+
+                    </div>
+                    <div class="shadow dispear"></div>
+                </div>
+            </li>
+        </ul><!--  中奖一人的卡片 -->
+    </div>
+    <!-- 各种bgm -->
+    <audio loop="loop" preload="auto" id="bgm_music" src="./music/bg.mp3"></audio>
+    <audio loop="loop" preload="auto" id="bgm_virtual" src="./music/virtual.mp3"></audio>
+</div><!-- 游戏区域  -->
+<script src="js/lib/socketIO.js"></script>
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/jquery.md5.js"></script>
+<script src="js/util/api.js"></script>
+<script src="js/lib/firework.js"></script>
+<script src="js/page/game.js"></script>
+

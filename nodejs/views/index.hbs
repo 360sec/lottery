@@ -1,0 +1,20 @@
+{{#each userList}}
+    {{#ifCond prize_level}}
+    <div class="user">
+        <!--<p>{{name}}</p>-->
+        <!--<p>索引:{{currentIndex}}</p>-->
+        <!--<p>{{um}}</p>-->
+        <!--<p>{{department}}</p>-->
+        <!--<p>{{mobile}}</p>-->
+        <p>{{healthId}}</p>
+        <!--<p>祝福:{{hope}}</p>-->
+        <!--{{#if photoUrl}}-->
+            <!--照片:<img style="width: 80px;height: 80px;" class="user_photo" src={{photoUrl}} alt=""/>-->
+        <!--{{/if}}-->
+        <!--<p>提交：{{commited}}</p>-->
+        <!--<p>中奖纪录:{{prize_level}}</p>-->
+    </div>
+    {{/ifCond}}
+{{/each}}
+
+

@@ -1,0 +1,74 @@
+<div class="form-container">
+    <div class="form-wrap">
+        <div id="upload" class="upload-avatar">
+            <img class="avatar" alt="" />
+            <p class="label-avatar">
+                上传头像
+            </p>
+        </div>
+    </div><!-- form-wrap -->
+    <form id="uploadForm"  enctype="multipart/form-data" name="form" onsubmit="getAction(this)" method="post">
+        <input class="f-commited dispear" type="text" name="userCommited" />
+        <div class="input-wrap">
+            <label class="f-label" for="f-name">真实姓名</label>
+            <input class="f-input" maxlength="4" id="f-name" type="text" name="userName" />
+            <div class="search">搜索</div>
+        </div>
+        <div class="input-wrap">
+            <label class="f-label" for="f-mobile">手机号</label>
+            <input class="f-input" id="f-mobile" type="tel" maxlength='11' name="userMobile" />
+        </div>
+        <div class="input-wrap">
+            <label class="f-label" for="f-healthId">健康号</label>
+            <input class="f-input" placeholder="登陆平安好医生APP查看" id="f-healthId" name="userHealthId" />
+        </div>
+        <input class="f-id dispear" id="f-id" name="userId" />
+        <div class="input-wrap">
+            <label class="f-label" for="f-hope">新年祝福</label>
+            <textarea class="f-hope" rows="4" placeholder="新年快乐，平安健康! (此处最多填30字)" maxlength="30" id="f-hope" name="userHope" ></textArea>
+        </div>
+        <input class="dispear" type="file" id="uploadImg" name="userPhoto"  />
+
+        <div class="submit-wrap dispear">
+            <div class="submit">
+                <p class="submit-top">健康号是发放奖金的唯一凭证，一经提交不可修改，请确保填写的信息无误。由个人信息填写错误导致与大奖擦肩而过的投诉概不受理！如有任何疑问，请联系行政杜娜：13774362678。</p>
+                <div class="submit-bot">
+                    <div class="submit-cancel">取消</div>
+                    <input type="submit" value="确认提交" name="submit" />
+                </div>
+            </div>
+        </div>
+    </form><!-- photoForm -->
+    <div class="fake-submit">提交</div>
+    <div class="alert-wrap dispear">
+        <div class="alert">
+            <div class="alert-top">
+
+            </div>
+            <div class="alert-bot">
+                知道了
+            </div>
+        </div>
+    </div><!-- alert-wrap -->
+    <div class="chooseUser-wrap dispear">
+        <ul class="chooseUser-list"></ul>
+    </div><!-- chooseUser-wrap -->
+    <!--照片裁切
+	<div class="photoCrop-wrap dispear">
+		<div class="photoCrop">
+			<div class="crap">确认提交</div>
+			<div class="cancel-crap">取消</div>
+		</div>
+	</div>
+     -->
+    <div class="pacman dispear">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div><!-- loading -->
+</div><!-- form-container -->
+<script src="js/lib/socketIO.js"></script>
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/jquery-form.js"></script>
+<script src="js/page/form.js"></script>
